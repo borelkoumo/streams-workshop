@@ -6,7 +6,7 @@ import {
 const start = performance.now()
 
 const profile = setInterval(() => {
-  console.error(`${(process.memoryUsage().arrayBuffers / 1024 / 1024).toFixed(4).padStart(10)} Mb`)
+  console.log(`${(process.memoryUsage().arrayBuffers / 1024 / 1024).toFixed(4).padStart(10)} Mb`)
 }, 100)
 
 async function copyFile (src, dest) {
